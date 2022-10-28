@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+%\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{VividPurple}{HTML}{000497}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Humberto Sousa Martins}
+\tagline{Machine Learning - Data Science - Python Development}
+\photo{3cm}{foto_cortada}
+\personalinfo{
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+\email{humbertosm.eng@gmail.com}
+\phone{73 99830-1539} 
+
+\linkedin{\href{https://www.linkedin.com/in/humbertosm-datascience/}{HumbertoSM-DataScience}} \hspace{0.2cm}
+\github{\href{https://github.com/HumbertoSM-DataScience}{HumbertoSM-DataScience}} 
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+\addnextpagesidebar[-1ex]{page2sidebar}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Experiência}
+
+\cvevent{Estágio em Data Science na Secretaria de Saúde de Viçosa}{}{2021 - 2022}{Viçosa - MG}\begin{itemize}
+
+\item Estágio em Data Science no setor de vacinação da Secretaria de Saúde de Viçosa pela empresa ToBlue, focado no uso de dados para organizar a vacinação contra o Coronavírus, comunicar resultados das ações e mitigar os efeitos da pandemia. \\
+\item Resultados: Reorganização e automação de tratamento de dados, coleta de dados pessoais a nível municipal, gerador de relatórios automatizados para contabilidade de vacinas, elaboração de algoritmo para detecção de erros e fraudes, chatbot eficiente para dúvidas sobre a vacinação, dashboard interativo de acesso público no site da Prefeitura.\\
+\item Desenvolvi: Comunicação com o poder público e público variado, organização por demandas, flexibilidade com urgências, proatividade e responsabilidade com dados sigilosos. \\
+\item Ferramentas: Análise, manipulação e limpeza de dados sigilosos com Python e Pandas, plataformas online Google Forms, Sheets e Drive. Dashboards no DataStudio. Chatbots pelo PromptChat.\\
+
+
+\end{itemize}
+
+\divider
+
+\cvevent{Gerente Júnior de Transportes e Financeiro em Inkiri Piracanga}{}{2014 - 2017}{Piracanga, Maraú - BA}
+\begin{itemize}
+
+\item Trabalhei como gerente júnior na área de transportes e posteriormente financeiro no hotel e centro holístico Inkiri Piracanga, em Maraú-BA.
+\item Desenvolvi: Atendimento ao público em inglês e espanhol, comunicação em equipe multi-nacional, ambiente dinâmico e imprevisível, responsabilidade com acesso a recursos financeiros, liderança e treinamento de equipe.
+
+\end{itemize}
+\cvsection{Projetos e Prêmios}
+
+\cvevent{Medalha de Honra ao Mérito - UFV}{}{2022}{Viçosa - MG}
+\begin{itemize}
+\item Medalha concedida por destaque acadêmico na graduação em Bacharelado em Física pela UFV
+\end{itemize}
+
+\cvevent{TCC: Rede U-Net para Otimização Topológica}{}{2020 - 2022}{Viçosa - MG}
+\begin{itemize}
+\item Projeto de pesquisa desenvolvido como TCC para o curso de Bacharelado em Física da UFV, em parceria com o Laboratório de Topologia da UNICAMP, visando usar as capacidades da arquitetura U-Net em segmentação semântica para melhorar a eficiência de algoritmos de otimização topológica. \\
+\item Resultados: Modelo de rede funcional com acurácia binária de 95,2\% e melhora na eficiência do algoritmo em 6 ordens de grandeza, relatório cientifico aprovado por banca multidisciplinar. \\
+\item Desenvolvi: Comunicação acadêmica multidisciplinar com outra instituição, leitura e interpretação de artigos científicos, documentação e versionamento de código, escrita de relatório. \\
+\item Ferramentas: Análise e manipulação de dados em Python, bibliotecas Pandas, Numpy, MatplotLib, Keras/TensorFlow, SkLearn, armazenamento e execução na nuvem: Google Drive e Google Colab, relatório em LaTeX no OverLeaf   \\
+
+\end{itemize}
+
+\cvevent{Hackaton AibaLab: 1º lugar com Projeto SIIR}{}{2021}{Viçosa - MG}
+\begin{itemize}
+
+\item Participação e condecoração com o primeiro lugar do Hackaton AibaLab, focado em soluções tecnológicas sustentáveis para a agroindústria. 
+\item Resultados: A equipe SIIR (Sistema Autônomo e Inteligente de Irrigação) desenvolveu um protótipo de sistema de irrigação baseado em Arduíno e utilizando previsões de AI para otimizar uso de recursos hídricos e elétricos. Além de prêmios em dinheiro e equipamentos, o projeto recebeu aceleração de 2 meses com especialistas da área e potenciais clientes.\\
+\item Desenvolvi: Comunicação rápida em equipe, ambiente dinâmico com prazos curtos, papel de liderança, elaboração de pitchs concisos e habilidades de persuasão e argumentação.
+\item Ferramentas: Desenvolvimento de layouts gráficos no Figma e Canva, organização de equipe no Trello.\\
+
+\end{itemize}
+
+\divider
+
+\cvevent{Pesquisa no exterior: Física Nuclear na República Tcheca}{}{2019}{Brno - República Tcheca}
+\begin{itemize}
+
+\item Bolsa de estágio científico na Universidade Tecnológica de Brno, Rep. Tcheca concedida pela INCBAC, focado no em simulações e desenvolvimento experimental de reatores nucleares a base de sais de Tório.\\
+\item Resultados: Relatório das atividades e experimentos desenvolvidos, resultados publicados no site da INCBAC.
+\item Desenvolvi: Língua e cultura estrangeira, comunicação e escrita acadêmica em inglês.\\
+\item Ferramentas: Métodos estatísticos de partículas com Deimos. Modelagem e simulação de reatores nucleares com técnica de Monte Carlo.
+
+
+\end{itemize}
+
+\cvsection{Outros Projetos}
+
+\begin{itemize}
+\item Criação de dashboards no DataStudio para empresa UpCycle, focada na implementação de pontos de coleta automatizados para reciclagem.\\
+\item Apresentação em congresso SIA-UFV: Criação de video-aula publicada no YouTube sobre o tema Introdução a Redes Neurais Convolucionais para Problemas-Modelo, focado na apresentação de conceitos básicos de redes neurais convolucionais e suas aplicações. \\
+\item Projetos computacionais em Python, focados em simulações de termodinâmica estatística, física de partículas e estatística. \\
+\item Voluntário na Tetris - Empresa Júnior de Engenharia Civil pela UTFPR, execução de projetos arquitetônicos e estruturais acessíveis e de interesse social.
+\end{itemize}
+
+
+
+\clearpage
+
+
+\end{document}
